@@ -1,15 +1,31 @@
 
-
+/* Propiedades generales */
 body{
-	/*width: 900px;*/
 	background: #02010a;
   font-family: "Dancing Script",cursive;
 
 }
+
+
 #contenido{
 	width: 900px;
 	margin: 0 auto;
+	animation-duration: 1s;
+	animation-name: slidein;
 }
+
+/* Animacion de abajo hacia arriba toda la pagina */
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+
+/* Propiedades del banner */
 header{
 	height: 3em;
 	padding: 10px;
@@ -20,6 +36,7 @@ header{
 	text-shadow: 2px 2px #02010a;
 }
 
+/* Menu */
 header nav {
   float: right;
 }
@@ -27,42 +44,54 @@ nav a {
 	color:white;
 	list-style: none;
 	margin: 0em 1em 0em 0em;
-  /*display: inline;*/
 }
 nav a:visited {
-	height: 30px;
+
 }
 
-
+/*Tamaños del contenido pagina principal*/
 article{
 	box-sizing: border-box;
 	height: 100%;
 	background-color: grey;
 	padding: 2%;
 	text-align: center;
-	height: 400px;
+
 }
 
 	#Presentacion	{
-	background-color: #91C9E8;
+	background-color: #82c3a6;
 	width: 100%;
+	height: 350px;
 	}
 	#Menu	{
-	background-color: #D1D1D1;
+	background-color: #d5c75f;
 	width: 100%;
+	height: 200px;
 	}
 
+/*Tamaños de contenido de Item*/
+  #Item	{
+  background-color: #d5c75f;
+  width: 100%;
+  height: 500px;
+  }
+
+
+/* Tamaño footer general */
 footer{
 	box-sizing: border-box;
 	height: 100%;
   border-radius: 0px 0px 10px 10px;
-	background-color: grey;
+	background-color: #C6d5c5;
 	padding: 2%;
 	text-align: center;
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	margin-bottom: 10px;
 }
+
+/*Manejo de contenido según el tamaño del viewport */
 @media screen and (max-width: 900px){
 
 	#contenido	{
