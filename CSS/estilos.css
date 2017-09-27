@@ -27,6 +27,8 @@ header{
 	height: 3em;
 	padding: 10px;
 	border-radius: 10px 10px 0px 0px;
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
 	background-color: #5b7989;
 	color:white;
 	font-size: 16px;
@@ -72,6 +74,8 @@ text-align: center;
 width: 50%
 }
 #Menu img{
+display: flex;
+flex-direction: column;
 margin-left: 50px;
 float: left;
 width: 30%
@@ -79,7 +83,6 @@ width: 30%
 
 /*Animacion de foto paisaje*/
 #Paisaje {
-	border: 2px;
 	-webkit-filter:drop-shadow( 2px 2px #82c3a6);
 	filter:drop-shadow( 2px 2px #82c3a6);
 
@@ -135,6 +138,8 @@ width: 30%
 footer{
 	box-sizing: border-box;
   border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
 	background-color: #C6d5c5;
 	text-align: center;
 	height: 200px;
@@ -197,12 +202,12 @@ footer li{
 	}
 	#Menu	{
 	 width: 100%;
-	 height: 500px;
+	 height: 300px;
 	}
 
 	/*Fotos del Inicio movil*/
 	#Presentacion img{
-		margin: 10% 10% 10% 10%;
+	margin: 10% 10% 10% 10%;
 	width: 100%
 	}
 	#Menu img{
@@ -223,12 +228,12 @@ footer li{
 /*Tamaño de pagina Items*/
 	 #Item	{
 	 background-color: #d5c75f;
-	width: 100%;
+   width: 100%;
 	 height: 800px;
 	}
 /*Tamaño de fotos items*/
 	 #Item img {
- 		float: left;
+		float: left;
  		margin: 1%;
  		width: 90%
  	}
@@ -245,5 +250,7 @@ footer li{
 		#cajaFooter4{
 			width: 100%;
 			border-radius: 0px 0px 10px 10px;
+			-moz-border-radius: 0px 0px 10px 10px;
+			-webkit-border-radius: 0px 0px 10px 10px;
 			margin-bottom: 10px;
 	}
